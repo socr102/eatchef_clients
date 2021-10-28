@@ -1,0 +1,37 @@
+@import "~styles/variables.scss";
+
+.register {
+  // height: 56vh;
+  // height: 430px;
+}
+
+.registerLogo {
+  width: 180px;
+  height: 180px;
+  background: $--color-white;
+  margin: auto;
+  position: absolute;
+  top: -85px;
+  left: 313px;
+  border-radius: 50%;
+
+  @media (max-width: $--sm) {
+    top: 80px;
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.registerImage {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (max-width: $--sm) {
+    width: 80px;
+  }
+}

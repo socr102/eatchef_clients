@@ -1,0 +1,44 @@
+@import '~styles/variables.scss';
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+
+    &__content {
+      flex: 1;
+      margin: 122px 0 0 0;
+
+      @media (max-width: $--xs) {
+        margin-top: 90px;
+      }
+    }
+
+    @media (min-width: 200px) {
+      main, header {
+        padding: 0 20px;
+      }
+    }
+
+    @media (min-width: 767.98px) {
+      main, header {
+        padding: 0 80px;
+      }
+    }
+
+    @media (min-width: 1199.98px) {
+      main, header {
+        padding: 0 120px;
+      }
+    }
+
+    @media (min-width: 1439.98px) {
+      main {
+        padding: 0 calc(50vw - 670px);
+      }
+      header {
+        padding: 0 calc(70vw - 696px);
+      }
+    }
+}
