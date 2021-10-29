@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === 'production') {
         googleClientId: '245264013276-avgqsj1umm7sc07sk2dtdgkpmqmn0p42.apps.googleusercontent.com',
         NODE_ENV: 'production',
         BASE_URL: 'https://api.eatchefs.com',
-        DEBUG: JSON.stringify(process.env.DEBUG ? ? false),
+        DEBUG: JSON.stringify(process.env.DEBUG ? true : false),
     };
 } else if (process.env.NODE_ENV === 'stage') {
     envs = {
